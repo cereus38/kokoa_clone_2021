@@ -1,0 +1,68 @@
+#frends-display-link {
+    text-align: center;
+    display: block;
+    background-color: #fafafa;
+    padding: 11px 0px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+}
+#frends-display-link i {
+    padding: 0px 5px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.friends-screen {
+    padding: 0px var(--horizontal-space);
+    height: 100vh;
+}
+.friends-screen__channel,
+.friends-screen__friends {
+    margin-top: 25px;
+    border-top: var(--main-border);
+    padding-top: 15px;
+}
+.friend-screen__channel-header,
+.friend-screen__friends-header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+}
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+#splash-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 2;
+    font-size: 132px;
+    animation: hideSplashScreen 0.4s ease-in-out forwards;
+    animation-delay: 2s;
+}
+#splash-screen img {
+    width: 68vw;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: white;
+    animation: rotateLogo 1.5s linear 0.3s;
+}
+@keyframes rotateLogo {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+}

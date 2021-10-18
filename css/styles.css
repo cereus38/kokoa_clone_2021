@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&family=Berkshire+Swash&family=Mukta&display=swap');
+
+/* Components */
+@import 'components/status-bar.css';
+@import 'components/nav-bar.css';
+@import 'components/screen-header.css';
+@import 'components/user-component.css';
+@import 'components/badge.css';
+@import 'components/icon-row.css';
+@import 'components/alt-screen-header.css';
+@import 'components/no-mobile.css';
+/* Screens */
+@import 'screens/login.css';
+@import 'screens/friends.css';
+@import 'screens/find.css';
+@import 'screens/more.css';
+@import 'screens/settings.css';
+@import 'screens/chat.css';
+
+/* reset */
+input:focus {
+    outline: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* variables */
+:root {
+    --main-color: #264653;
+    --yellow: #fae100;
+    --horizontal-space: 25px;
+    --main-border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+/* screen setting */
+* {
+    box-sizing: border-box;
+}
+body {
+    color: #2e363e;
+    padding-top: 135px;
+    height: 100vh;
+    font-family: 'Mukta', sans-serif;
+    font-size: 18px;
+}
+.main-screen {
+    padding: 0px var(--horizontal-space);
+    margin-top: 10px;
+    height: 100vh;
+}

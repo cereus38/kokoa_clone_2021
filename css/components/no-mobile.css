@@ -1,0 +1,24 @@
+#no-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Berkshire Swash', cursive;
+    height: 100vh;
+    width: 100vw;
+    background-color: #264653;
+    color: white;
+    line-height: 1.3;
+    position: fixed;
+    top: 0;
+    font-size: 30px;
+    z-index: 99;
+}
+#no-mobile img {
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 600px) {
+    #no-mobile {
+        display: none;
+    }
+}

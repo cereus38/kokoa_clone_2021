@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="kr">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/FortAwesome/Font-Awesome@5.14.0/css/all.min.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="js/main.js"></script>
+        <title>Chats - Hogwarts Talk</title>
+    </head>
+    <body>
+        <div class="status-bar">
+            <div class="status-bar__column">
+                <span>Hogwarts</span>
+            </div>
+            <div class="status-bar__column">
+                <span>09:34</span>
+            </div>
+            <div class="status-bar__column">
+                <i class="fas fa-wifi fa-sm"></i>
+                <span>34%</span>
+                <i class="fas fa-battery-quarter"></i>
+                <i class="fas fa-bolt fa-sm"></i>
+            </div>
+        </div>
+
+        <header class="screen-header">
+            <h1 class="screen-header__title">Chats</h1>
+            <div class="screen-header__icons">
+                <span><i class="fas fa-search fa-lg"></i></span>
+                <span><i class="far fa-comment-dots fa-lg"></i></span>
+                <span><i class="fas fa-music fa-lg"></i></span>
+                <span>
+                    <div class="badge-alret"></div>
+                    <a href="settings.html">
+                        <i class="fas fa-cog fa-lg"></i>
+                    </a>
+                </span>
+            </div>
+        </header>
+
+        <main class="main-screen chats-screen">
+            <a href="chat-hogwarts.html">
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="img/hogwarts.jpg" class="user-component__avatar" />
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Hogwarts</h4>
+                            <h6 class="user-component__subtitle">It's obvious, isn't it?</h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column">
+                        <span class="user-component__time">21:28</span>
+                        <div class="badge">2</div>
+                    </div>
+                </div>
+            </a>
+            <a href="chat-malfoy.html">
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="img/malfoy.jpg" class="user-component__avatar" />
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Draco Malfoy</h4>
+                            <h6 class="user-component__subtitle">Shut up, Malfoy.</h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column">
+                        <span class="user-component__time">16:34</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img src="img/dumbledore.jpg" class="user-component__avatar" />
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Albus Dumbledore</h4>
+                            <h6 class="user-component__subtitle">Welcome to Hogwarts!</h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column">
+                        <span class="user-component__time">9:34</span>
+                        <div class="badge">1</div>
+                    </div>
+                </div>
+            </a>
+        </main>
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__btn">
+                    <a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="chats.html">
+                        <span class="nav__notification badge">1</span>
+                        <i class="fas fa-comment fa-2x"></i
+                    ></a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a>
+                </li>
+                <li class="nav__btn">
+                    <a class="nav__link" href="more.html">
+                        <div class="badge-alret"></div>
+                        <i class="fas fa-ellipsis-h fa-2x"></i
+                    ></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div id="no-mobile">
+            <img src="img/no-mobile.gif" />
+            <span>Your screen is too big!</span>
+            <span>Please reduce your screen size.</span>
+        </div>
+    </body>
+</html>
