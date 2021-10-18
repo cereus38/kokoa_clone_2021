@@ -32,9 +32,9 @@
 }
 .nav__notification {
     position: absolute;
-    left: 16px;
-    bottom: 20px;
-    animation: notificationAnimation 2s ease-in-out infinite;
+    left: 20px;
+    bottom: 24px;
+    animation: notificationAnimation 2.5s ease-in-out infinite;
 }
 
 @keyframes appearBtnAnimation {
