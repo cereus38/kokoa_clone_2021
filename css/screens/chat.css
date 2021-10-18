@@ -12,17 +12,6 @@
 #chat-screen .alt-header {
     background-color: #a8b5ba;
 }
-
-@keyframes fadeIn {
-    from {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    to {
-        transform: none;
-        opacity: 1;
-    }
-}
 .main-chat {
     margin-top: 180px;
     display: flex;
