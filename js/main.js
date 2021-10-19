@@ -1,6 +1,6 @@
 $(function(){
     $('.index__envelope > img').click(function(){ 
-      $('.index-cover').fadeOut(1000);
+      $('.index-cover').fadeOut(1200);
       $('.welcome-header__cover-text').hide();
       $('.welcome-header__text').show();
     });
