@@ -71,36 +71,25 @@
     border-radius: 10px;
 }
 .open-post__heart-count {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    padding: 5px;
+    padding: 6px;
     border-radius: 20px;
     display: flex;
     align-items: center;
     position: absolute;
     bottom: 10px;
     right: 10px;
-    font-size: 12px;
+    font-size: 14px;
 }
 .open-post__heart-count span {
-    margin-left: 3px;
+    margin-left: 4px;
 }
-
-@keyframes heartBeat {
-    0% {
-        color: white;
-        transform: none;
-    }
-    50% {
-        color: tomato;
-        transform: scale(1.5);
-    }
-    100% {
-        color: white;
-        transform: none;
-    }
+.open-post__heart-count i {
+    transition: transform 0.3s ease-in-out;
 }
 .open-post__heart-count:hover i {
     will-change: transform;
-    animation: heartBeat 1s ease-in-out infinite;
+    transform: scale(1.4);
+    cursor: pointer;
 }

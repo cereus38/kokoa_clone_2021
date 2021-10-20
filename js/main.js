@@ -58,5 +58,15 @@ $(function(){
           $('.login-form__submit').animate({backgroundColor:'#0d6217'});
 
         });
+        $('.open-post:nth-child(2) .open-post__heart-count').click(function(){
+          $('.open-post:nth-child(2) i').animate({color:'#FF6347'});
+          $('.open-post:nth-child(2) .number').text('324');
+        });
+
+        $('.open-post:last-child .open-post__heart-count').click(function(){
+          $('.open-post:last-child i').animate({color:'#FF6347'});
+          $('.open-post:last-child .number').text('128');
+        });
+
 
 });
